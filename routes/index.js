@@ -32,7 +32,7 @@ var upload = multer({ storage: storage });
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Express teste 2' });
+  res.render('index', { title: 'Welcome to Express' });
 });
 
 router.post('/upload', upload.single('file'), function (req, res, next) {
